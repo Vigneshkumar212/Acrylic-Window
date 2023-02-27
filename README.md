@@ -2,6 +2,7 @@
 ![image](https://user-images.githubusercontent.com/60309361/221607891-5aa47deb-edf3-4eec-a009-d1b6f4818b3f.png)
 
 > **Warning**: this is just a work around but not an exact acrylic window for electron js
+> **Warning**: Obviously, file names may change with respect to your project
 
 #  Modules required
  - electron js
@@ -11,7 +12,7 @@
 we are using the electron's main renderer to listen to changes in position, minimize, maximize and focus events then send the position and size of the window. Then the  render process's `preload.js` will listen to them via the IPC-Main and respectively change the image's position and size to emulate a acrylic window
 
 # changes to index.html
-open your main file [index.html] then,
+open your main file `index.html` then,
 1) wrap your main content in a div tag with some styles as given (feel free to edit and experiment)
 
 ```
@@ -65,7 +66,7 @@ html {
     overflow: auto;
 }
 ```
-3)  `import` screen from electron then add the following to each of your window 
+3)  `import screen` from electron then add the following to each of your window 
 ``` 
     const primaryDisplay = screen.getPrimaryDisplay()
     const { width, height } = primaryDisplay.workAreaSize
@@ -125,4 +126,5 @@ window.addEventListener('DOMContentLoaded', () => {
 
 You can change the CSS properties i.e. opacity, filter:blur(`px`), and background 
 Feel free to give suggestion to make this project better
-Thank you
+
+Thank you.
