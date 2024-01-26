@@ -1,3 +1,6 @@
+### NOTE: Electron has added support via the `backgroundMaterial` prop when creating BrowserWinodw object, refer to electron's official documentation on implementing the same. This repo is no longer supported and hence will be archived
+### NOTE: It is recommended that you use the official properties provided by electron for better efficiency however, for customizability of the transparency you may use this repo as a guide. Thanks.
+
 # Electron work around for transparent acrylic window
 ![image](https://user-images.githubusercontent.com/60309361/221607891-5aa47deb-edf3-4eec-a009-d1b6f4818b3f.png)
 
